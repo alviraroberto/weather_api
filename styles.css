@@ -1,37 +1,50 @@
 
 body{
-    background-color:grey;
+    background-color:rgb(54, 54, 54);
     font-family: 'Montserrat', sans-serif;
 }
 
-.weather-box{
+.weather-container{    
     position: absolute;
+    margin: 0 auto;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 325px;
+    height: 600px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: linear-gradient(rgb(247, 188, 61), #22C1C3 );
+}
+
+.weather-search{
+    position: relative;
     display: flex ;
+    align-items: center;
     justify-content: center;
     flex-direction: row;
     height: 50px;
-
+    margin: 30px auto;
+    width:100%;
 }
 
 button{
     height: 25px;
     border: none;
     background-color: transparent;
-    top: -10px;
+ 
 }
 
-#buscador-clima{
-
+#buscador-texto{
     padding: 0 10px;
-    text-align: left;
-
+    text-align: center;
     background-color: #FFFFFF;
     border-width: 2px;
     border-style: solid;
     border-color: #DAE3F3;
     border-radius: 9px;
     color: #272C34;
-    width: 250px;
+    width: 220px;
     cursor: text;
     font-size: 14px;
     line-height: 20px;
@@ -43,16 +56,58 @@ button{
 
 
 
-.weather-container{
+ .weather-display{
     display: flex;
-    position: absolute;
+    position: relative;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color:white;
 
+ }
+
+.temperature-area{
+    display: flex;
+    position: relative;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0;
+}
+
+
+.temperature-header{
     margin: 0 auto;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 375px;
-    height: 600px;
-    border: 1px solid white;
-    border-radius: 10px;
+}
+
+.temp-signal{
+    display: flex;
+}
+
+h1 {
+    font-size:100px;
+}
+
+.humedad-area{
+    display: flex;
+    position: relative;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalles-de-tiempo{
+ height:75px;
+ display: flex;
+ 
+}
+
+.humid-det-area {
+    margin:auto;
+
+}
+
+.subtitulo{
+    font-size:15px;
 }
