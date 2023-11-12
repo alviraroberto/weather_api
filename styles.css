@@ -1,0 +1,67 @@
+
+body{
+    background-color:grey;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.btn-loc{
+    height: 25px;
+    border: none;
+    background-color: transparent;
+}
+
+#buscador-clima{
+
+    padding: 0 10px;
+    text-align: left;
+    transition-property: box-shadow, background;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+    background-color: #FFFFFF;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #DAE3F3;
+    border-radius: 0px;
+    color: #272C34;
+    width: 250px;
+    cursor: text;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    height: 30px;
+ }
+
+
+ #buscador-clima:hover{
+    box-shadow: 0px 2px 4px rgb(39 44 52 / 12%);
+
+ }
+
+#buscador-clima:focus{
+    transition-property: border-color, box-shadow, background;
+    border-color: #39414D;
+    outline: 0px;
+    box-shadow: 0 0 0 3px #c5d2e7;
+}
+
+.weather-container{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.weather-box{
+    width: 375px;
+    height: 600px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
