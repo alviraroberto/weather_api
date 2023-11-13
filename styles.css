@@ -11,7 +11,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     width: 325px;
-    height: 600px;
+    height: 550px;
     border: 1px solid white;
     border-radius: 10px;
     background: linear-gradient(rgb(247, 188, 61), #22C1C3 );
@@ -58,12 +58,14 @@ button{
 
  .weather-display{
     display: flex;
+    flex-flow: column;
+
     position: relative;
     flex-direction:column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin: auto;
     color:white;
+
 
  }
 
@@ -72,8 +74,9 @@ button{
     position: relative;
     flex-direction:column;
     justify-content: center;
-    align-items: center;
-    margin: 20px auto 0;
+    align-items:flex-start;
+    margin: 0 auto;
+
 }
 
 
@@ -89,6 +92,20 @@ h1 {
     font-size:100px;
 }
 
+.detalles-de-tiempo{
+    height:50px;
+    width: 100%;
+    display: flex;
+    padding: 0 4px;
+    justify-content: space-around;
+   
+    
+}
+
+.box-tiempo-dets{
+    height: 40px;
+}
+
 .humedad-area{
     display: flex;
     position: relative;
@@ -97,17 +114,40 @@ h1 {
     align-items: center;
 }
 
-.detalles-de-tiempo{
- height:75px;
- display: flex;
- 
+.speed-area{
+
+    display: flex;
+    position: relative;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.humid-det-area {
-    margin:auto;
 
+.clima-dets{
+    font-size:20px;
+    margin: 0 auto;
 }
+
+
 
 .subtitulo{
-    font-size:15px;
+    font-size:10px;
+    margin: 0 auto;
+}
+
+
+.toggle-met-temps{
+    width: 100%;
+    font-size:small;
+    display:flex;
+    position: relative;
+    overflow-y: hidden;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-top: 55px;
+    margin-right: 20px;
+
+
 }
