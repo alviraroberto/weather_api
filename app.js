@@ -1,7 +1,7 @@
 const apiKey = "7e298ea2339af78c3181866e48f3d9ba";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=imperial&q=";
 const searchBox = document.querySelector (".weather-search input ");
-const searchBtn = document.querySelector (".weather-search button ");
+const searchBtn = document.querySelector (".weather-search button");
 
 async function checkWeather(city){
     const response = await fetch(apiUrl + city +  `&appid=${apiKey}`);
@@ -16,10 +16,12 @@ async function checkWeather(city){
     document
 
 }
-checkWeather();
-// searchBtn.addEventListener("click", ()=>{
-//     checkWeather(searchBox.value);
 
-// } )
+
+
+searchBtn.addEventListener("click", ()=>{
+    checkWeather(searchBox.value);
+
+})
 
 
