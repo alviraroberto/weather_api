@@ -74,9 +74,13 @@ button{
     position: relative;
     flex-direction:column;
     justify-content: center;
-    align-items:flex-start;
+    align-items:center;
     margin: 0 auto;
 
+}
+
+.image-temp{
+    width:50%;
 }
 
 
@@ -150,4 +154,11 @@ h1 {
     margin-right: 20px;
 
 
+}
+
+
+.clickFToC {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  
 }
