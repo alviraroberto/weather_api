@@ -79,6 +79,10 @@ button{
 
 }
 
+.img-head {
+    width:200px;
+}
+
 .image-temp{
     width:50%;
 }
@@ -162,3 +166,4 @@ h1 {
     font-family: 'Montserrat', sans-serif;
   
 }
+
